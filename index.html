@@ -20,3 +20,19 @@ if (status != true)
  $("#alertError").show(); 
 return; 
 }
+
+
+$("#alertSuccess").text("Saved successfully.");
+$("#alertSuccess").show(); 
+ 
+$("#formUser")[0].reset();
+
+});
+
+function validateItemForm()
+{
+		// NAME
+if ($("#txtName").val().trim() == "") 
+ { 
+ return "Insert student name."; 
+ } 
